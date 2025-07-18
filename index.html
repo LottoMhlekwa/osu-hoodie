@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSU Hoodie</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('PHOTO-2025-06-01-08-06-16.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease-in-out;
+        }
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 24px;
+            background: #ffffff;
+            color: #000;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            animation: fadeUp 2s ease-in-out;
+        }
+        .btn:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes slideDown {
+            from {transform: translateY(-50px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+        @keyframes fadeUp {
+            from {transform: translateY(50px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .btn {
+                font-size: 1rem;
+                padding: 10px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Order Your OSU Hoodie Now</h1>
+        <div class="btn-container">
+            <a href="mailto:akhonalotto@gmail.com" class="btn">Email Us</a>
+            <a href="https://wa.me/27679187782" target="_blank" class="btn">WhatsApp Us</a>
+            <a href="tel:+27679187782" class="btn">Call Us</a>
+        </div>
+    </div>
+</body>
+</html>
